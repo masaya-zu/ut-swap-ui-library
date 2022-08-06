@@ -1,0 +1,61 @@
+@import "./variables.css";
+
+/* CSS Shapes */
+.css_arrowhead {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: scale(0.625); /* scale 1 = 16px */
+    border-width: 0 8px 13.9px 8px;
+    /* Using same border with for both arrowup and arrowdown to prevent stretching issues */
+}
+.css_arrowhead.arrowhead__up {
+    border-color: transparent transparent var(--clr_positive) transparent;
+}
+.css_arrowhead.arrowhead__down {
+    /* border-width: 13.9px 8px 0 8px; */
+    transform: scale(-.625); /* reflect horizontally */
+    border-color: transparent transparent var(--clr_negative) transparent;    
+}
+
+.css_dot {
+    display: inline-block;
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50%;
+}
+
+
+
+/* Margins */
+.margin_auto {
+    margin: auto;
+}
+
+
+
+/* Colors & backgrounds */
+.clr_positive {
+    color: var(--clr_positive);
+}
+.clr_negative {
+    color: var(--clr_negative);
+}
+.fill_secondary {
+    fill: var(--clr_secondary);
+}
+.fill_secondary__sort_icon {
+    fill: var(--clr_secondary);
+    filter: invert(1);
+}
+
+
+.bg_white {
+    background-color: #fff;
+}
+.bg_black {
+    background-color: #000;
+}
+
+
