@@ -21,11 +21,9 @@ body {
     width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--clr_dark);
-        color: #fff;
-    }
+body.dark {
+    background-color: var(--clr_dark);
+    color: #fff;
 }
 
 /* Minor Third Typography Scaling */
@@ -65,10 +63,12 @@ p.body {
     margin-bottom: 1rem;
     max-width: 60ch;
 }
-@media (prefers-color-scheme: dark) {
-    h1.heading {color: #fff;}
-    h2.subheading, h3.smallheading {color: var(--clr_grey_shade_f)}
-    p.body {color: var(--clr_grey_shade_e);}
+body.dark h1.heading {color: #fff;}
+body.dark h2.subheading, h3.smallheading {
+    color: var(--clr_grey_shade_f)
+}
+body.dark p.body {
+    color: var(--clr_grey_shade_e);
 }
 
 div, span, p, a, ul, ol, small, q, blockquote {
@@ -86,8 +86,5 @@ p, q, blockquote {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%; max-width: 100%;
-    /* width: 95vw; max-width: 95vw; */
-    /* padding-left: calc(var(--nav_width) / 1.7); */
-    /* padding-left: 5vw; */
 }
 
