@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;600;700&display=swap');
 
 :root {
     --clr_primary: #1B2266;
@@ -34,11 +35,18 @@
     --filter_clr_primary_shade_b: invert(31%) sepia(45%) saturate(689%) hue-rotate(197deg) brightness(92%) contrast(90%);
     --filter_clr_primary_shade_c: invert(66%) sepia(8%) saturate(2184%) hue-rotate(194deg) brightness(78%) contrast(89%);
 
+    --filter_clr_secondary: invert(86%) sepia(10%) saturate(6979%) hue-rotate(348deg) brightness(92%) contrast(90%);
+    --filter_clr_secondary_shade_a: invert(89%) sepia(38%) saturate(2797%) hue-rotate(326deg) brightness(104%) contrast(91%);
+
     --filter_clr_positive: invert(35%) sepia(91%) saturate(714%) hue-rotate(116deg) brightness(87%) contrast(95%);
     --filter_clr_negative: invert(25%) sepia(84%) saturate(1826%) hue-rotate(339deg) brightness(98%) contrast(96%);
 
     --filter_clr_grey_shade_a: invert(19%) sepia(0%) saturate(0%) hue-rotate(160deg) brightness(135%) contrast(97%);
     --filter_clr_grey_shade_b: invert(45%) sepia(0%) saturate(975%) hue-rotate(212deg) brightness(86%) contrast(89%);
+    --filter_clr_grey_shade_c: invert(74%) sepia(0%) saturate(1083%) hue-rotate(134deg) brightness(84%) contrast(84%);
+    --filter_clr_grey_shade_d: invert(100%) sepia(0%) saturate(5592%) hue-rotate(334deg) brightness(117%) contrast(60%);
+    --filter_clr_grey_shade_e: invert(97%) sepia(0%) saturate(2153%) hue-rotate(214deg) brightness(118%) contrast(85%);
+    --filter_clr_grey_shade_f: invert(99%) sepia(79%) saturate(166%) hue-rotate(243deg) brightness(114%) contrast(94%);
 
 
     /* Shadows */
@@ -73,14 +81,12 @@
     --bp-xxlarge: 160em; /* 2560px */
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --clr_positive: #0AE691;
-        --clr_negative: #ff4d4d;
+body.dark {
+    --clr_positive: #0AE691;
+    --clr_negative: #ff4d4d;
 
-        --filter_clr_positive: invert(79%) sepia(12%) saturate(7381%) hue-rotate(100deg) brightness(96%) contrast(92%);
-        --filter_clr_negative: invert(47%) sepia(93%) saturate(2604%) hue-rotate(329deg) brightness(105%) contrast(122%);
-    }
+    --filter_clr_positive: invert(79%) sepia(12%) saturate(7381%) hue-rotate(100deg) brightness(96%) contrast(92%);
+    --filter_clr_negative: invert(47%) sepia(93%) saturate(2604%) hue-rotate(329deg) brightness(105%) contrast(122%);
 }
 
 /* 
